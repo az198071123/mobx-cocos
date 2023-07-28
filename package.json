@@ -22,6 +22,7 @@
     "mobx": ">=4.13.0"
   },
   "devDependencies": {
-    "mobx": "^5.11.0"
+    "typescript": "^4.3.2",
+    "mobx": "^5.15.7"
   }
 }

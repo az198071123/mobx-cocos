@@ -52,17 +52,6 @@ export class Component extends cc.Component {
     return react(()=> store.array[this.index % store.array.length], (value)=> store.counter = value);
   }
 
-  /**
-   * 如下方式的简写
-   * @reactor fn(){ 
-   *    return react(()=> store.counter, (v)=> store.shadowCounter = v)
-   * }
-   */
-  @reactor(()=> store.counter)
-  protected counterReactor(counter: number){
-    store.shadowCounter = counter;
-  }
-
   @action private addIndex(){
     store.index++;
   }
